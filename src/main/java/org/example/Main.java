@@ -35,7 +35,7 @@ public class Main {
 
         Thread thread3 = new Thread(() -> {
             for (String text : texts) {
-                if (asNiceAsAACCC(text)) {
+                if (asNiceAsAACCC(text) && !asNiceAsAAA(text)) {
                     counterSelector(text.length());
                 }
             }
